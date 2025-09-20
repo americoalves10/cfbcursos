@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*var nome = window.prompt('Qual o seu nome? ')
+        document.write(`Olá ${nome}! Seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}.<br/>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}.<br/><br/><br/><br/>`)
+
+        var salario = parseFloat(window.prompt('Qual é o seu salário atual? '))    
+        const formatreal = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'})
+        var salconvert = formatreal.format(salario)
+        document.write(`Seu salário atual é de: ${salconvert}`)*/
+
+        //let readline = require('readline-sync')
+
+        let resposta = parseInt(window.prompt('Qual o ano de nascimento?'))
+        let ano = 2025
+        let idade = ano - resposta
+        if (idade >= 18) {
+            document.write(`Você tem ${idade} anos, e será PRESO`)
+        } else {
+            document.write(`Você tem ${idade} anos, e será SOLTO`)
+        }
+
+
+
+    </script>
+</body>
+</html>
