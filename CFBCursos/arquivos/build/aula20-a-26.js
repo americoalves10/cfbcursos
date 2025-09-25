@@ -16,14 +16,22 @@ class Conta {
         console.log(`Titular : ${this.titular} `);
         console.log(`Número  : ${this.numero} `);
     }
-    saldo() {
+    get saldo() {
         return this.saldoconta;
     }
     deposito(valor) {
+        if (valor < 0) {
+            console.log(`VALOR INVÁLIDO !!!!!`);
+            return;
+        }
         this.saldoconta += valor;
     }
     saque(valor) {
-        if (valor >= this.saldoconta) {
+        if (valor < 0) {
+            console.log(`VALOR INVÁLIDO !!!!!`);
+            return;
+        }
+        if (valor <= this.saldoconta) {
             this.saldoconta -= valor;
         }
         else {
@@ -51,6 +59,14 @@ class ContaPf extends Conta {
             super.deposito(valor);
         }
     }
+    saque(valor) {
+        if (valor > 1000) {
+            console.log(`Valor de saque muito grande para esse tipo de conta!!`);
+        }
+        else {
+            super.saque(valor);
+        }
+    }
 }
 class ContaPj extends Conta {
     cnpj;
@@ -72,18 +88,35 @@ class ContaPj extends Conta {
             super.deposito(valor);
         }
     }
+    saque(valor) {
+        if (valor > 10000) {
+            console.log(`Valor de saque muito grande para esse tipo de conta!!`);
+        }
+        else {
+            super.saque(valor);
+        }
+    }
 }
 const c1 = new ContaPf(111, "Bruno");
 const c2 = new ContaPj(222333, "CFBCursos");
 c1.deposito(800);
 c1.deposito(200);
 c1.deposito(1000);
-console.log(c1.saldo());
-c2.deposito(10000);
-c2.deposito(10000);
-c2.deposito(10000);
-console.log(c2.saldo());
-//c1.info();
+//c1.saque(1000);
+c1.saque(500);
+//c1.saque(500);
+//c1.saque(10);
+console.log(c1.saldo);
+//c2.deposito(10000);
+//c2.deposito(10000);
+//c2.deposito(10000);
+//c2.saque(10000);
+//c2.saque(5000);
+//c2.saque(5000);
+//c2.saque(7000);
+//c2.saque(4000);
+//console.log(c2.saldo());
+c1.info();
 //c2.info();
 //console.log(c1.titular);
 //console.log(c1.numero);

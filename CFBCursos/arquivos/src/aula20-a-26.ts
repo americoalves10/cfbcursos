@@ -1,5 +1,5 @@
-class Conta {
-    protected numero: number;
+abstract class Conta {
+    private readonly numero: number;
     protected titular: string;
     private saldoconta: number;
 
@@ -18,20 +18,29 @@ class Conta {
         console.log(`Número  : ${this.numero} `)        
     }
 
-    public saldo(): number{
+    get saldo(): number{
         return this.saldoconta
     }
 
     protected deposito(valor: number) {
+        if (valor < 0) {
+            console.log(`VALOR INVÁLIDO !!!!!`)
+            return
+        }
         this.saldoconta+=valor
     }
 
     protected saque(valor: number) {
-        if (valor >= this.saldoconta) {
+        if (valor < 0) {
+            console.log(`VALOR INVÁLIDO !!!!!`)
+            return
+        }
+        if (valor <= this.saldoconta) {
             this.saldoconta -= valor
         } else {
-            console.log(`Saldo insuficiente !!!!!`)
+            console.log(`Saldo insuficiente !!!!!`)        
         }
+        
     }
 }
 
@@ -53,6 +62,13 @@ class ContaPf extends Conta{
             console.log(`Valor de depósito muito grande para esse tipo de conta!!`);
         } else {
             super.deposito(valor);
+        }        
+    }
+    public saque(valor: number){
+        if (valor > 1000) {
+            console.log(`Valor de saque muito grande para esse tipo de conta!!`);
+        } else {
+            super.saque(valor);
         }        
     }
 
@@ -79,7 +95,13 @@ class ContaPj extends Conta{
             super.deposito(valor);
         }        
     }
-
+    public saque(valor: number){
+        if (valor > 10000) {
+            console.log(`Valor de saque muito grande para esse tipo de conta!!`);
+        } else {
+            super.saque(valor);
+        }        
+    }
 }
 
 const c1 = new ContaPf (111, "Bruno");
@@ -88,14 +110,23 @@ const c2 = new ContaPj (222333, "CFBCursos");
 c1.deposito(800);
 c1.deposito(200);
 c1.deposito(1000);
-console.log(c1.saldo());
+//c1.saque(1000);
+c1.saque(500);
+//c1.saque(500);
+//c1.saque(10);
+console.log(c1.saldo);
 
-c2.deposito(10000);
-c2.deposito(10000);
-c2.deposito(10000);
-console.log(c2.saldo());
+//c2.deposito(10000);
+//c2.deposito(10000);
+//c2.deposito(10000);
+//c2.saque(10000);
+//c2.saque(5000);
+//c2.saque(5000);
+//c2.saque(7000);
+//c2.saque(4000);
+//console.log(c2.saldo());
 
-//c1.info();
+c1.info();
 //c2.info();
 
 //console.log(c1.titular);
