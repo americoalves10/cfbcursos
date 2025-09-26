@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let dados = {
     nome: "Demerval",
     idade: 25,
@@ -12,3 +10,4 @@ console.log(typeof (dados));
 console.log(dados);
 dados.ola();
 dados.info(dados.nome);
+export {};

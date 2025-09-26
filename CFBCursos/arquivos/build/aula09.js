@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var diasdasemana;
 (function (diasdasemana) {
     diasdasemana[diasdasemana["domingo"] = 0] = "domingo";
@@ -28,3 +26,4 @@ console.log(usuario.super);
 const tp = usuario.user;
 console.log(tp);
 console.log(usuario[tp]);
+export {};

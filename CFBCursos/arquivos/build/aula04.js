@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let nome;
 nome = "Americo";
 nome = "Felipe";
@@ -8,3 +6,4 @@ valor = 100;
 valor = 10;
 console.log(nome);
 console.log(valor);
+export {};

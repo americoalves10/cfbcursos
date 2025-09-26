@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Conta {
     numero;
     titular;
@@ -40,10 +38,14 @@ class Conta {
     }
 }
 class ContaPf extends Conta {
+    taxaCalculo = 10;
     cpf;
     constructor(cpf, titular) {
         super(titular);
         this.cpf = cpf;
+    }
+    calcularTributo(valor) {
+        return valor * this.taxaCalculo;
     }
     info() {
         console.log(`Tipo    : Conta PF`);
@@ -117,6 +119,7 @@ console.log(c1.saldo);
 //c2.saque(4000);
 //console.log(c2.saldo());
 c1.info();
+export {};
 //c2.info();
 //console.log(c1.titular);
 //console.log(c1.numero);

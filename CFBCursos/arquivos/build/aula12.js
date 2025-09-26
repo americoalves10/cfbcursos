@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function logar(user, pass) {
     console.log(`User  : ${user}`);
     console.log(`Senha : ${pass}`);
@@ -14,3 +12,4 @@ let nres = soma2(10, 15);
 let sres = soma2(2, 8).toString();
 console.log(nres);
 console.log(sres);
+export {};

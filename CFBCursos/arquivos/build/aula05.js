@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //let vteste: string|number|boolean;
 let vteste;
 vteste = "Bruno";
@@ -13,3 +11,4 @@ valores.push(2025);
 console.log(cursos);
 console.log(valores);
 console.log(vteste);
+export {};

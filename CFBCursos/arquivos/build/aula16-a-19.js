@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Computador {
     id;
     nome;
@@ -48,3 +46,4 @@ comp1.nome = "Super Rapidão";
 comp1.info();
 comp2.info();
 comp3.info();
+export {};
