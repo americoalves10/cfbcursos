@@ -1,4 +1,4 @@
-import { pessoa, objeto } from "./classes.js";
+import pessoa, {objeto, coisas } from "./classes.js"
 //import {pessoa, objeto} from "./classes.js"
 //import {objeto} from "./classes";
 
