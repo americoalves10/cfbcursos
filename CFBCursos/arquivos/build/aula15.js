@@ -11,3 +11,4 @@ function fsoma(...n) {
 }
 console.log(fsoma(10, 20, 30, 40, 100));
 export {};
+//# sourceMappingURL=aula15.js.map

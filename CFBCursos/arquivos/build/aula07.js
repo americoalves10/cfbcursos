@@ -4,3 +4,4 @@ let coisas = ["corda", 10, true];
 console.log(coisas);
 console.log(coisas[2]);
 export {};
+//# sourceMappingURL=aula07.js.map

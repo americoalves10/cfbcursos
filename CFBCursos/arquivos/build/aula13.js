@@ -8,3 +8,4 @@ function novouser(user, pass, nome) {
 }
 novouser("americo", "123");
 export {};
+//# sourceMappingURL=aula13.js.map

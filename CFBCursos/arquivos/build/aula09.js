@@ -27,3 +27,4 @@ const tp = usuario.user;
 console.log(tp);
 console.log(usuario[tp]);
 export {};
+//# sourceMappingURL=aula09.js.map

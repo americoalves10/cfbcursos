@@ -13,3 +13,4 @@ let sres = soma2(2, 8).toString();
 console.log(nres);
 console.log(sres);
 export {};
+//# sourceMappingURL=aula12.js.map

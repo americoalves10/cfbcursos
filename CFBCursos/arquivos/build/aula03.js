@@ -13,3 +13,4 @@ console.log(a1.nome);
 console.log(a1.escola);
 console.log(a1.curso);
 export {};
+//# sourceMappingURL=aula03.js.map

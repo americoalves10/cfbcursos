@@ -12,3 +12,4 @@ console.log(cursos);
 console.log(valores);
 console.log(vteste);
 export {};
+//# sourceMappingURL=aula05.js.map

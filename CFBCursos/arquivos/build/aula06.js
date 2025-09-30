@@ -14,3 +14,4 @@ console.log(numeros);
 let numeros_ro = [100, 200, 300, 400, 500];
 console.log(numeros_ro);
 export {};
+//# sourceMappingURL=aula06.js.map

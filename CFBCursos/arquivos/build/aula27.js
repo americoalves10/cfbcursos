@@ -8,3 +8,4 @@ console.log(curso1);
 console.log(curso2);
 console.log(curso3);
 export {};
+//# sourceMappingURL=aula27.js.map

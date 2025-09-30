@@ -19,3 +19,4 @@ console.log(fsoma2(90, 60));
 let numeros = [10, 20, 30, 40, 60];
 console.log(fsoma3(numeros));
 export {};
+//# sourceMappingURL=aula14.js.map

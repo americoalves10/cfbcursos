@@ -15,3 +15,4 @@ const ct2 = new c_teste("100000!!!!!!!!!!!");
 console.log(ct1.valor);
 console.log(ct2.valor);
 export {};
+//# sourceMappingURL=aula29.js.map

@@ -3,3 +3,4 @@ const escola = "SOFTEX";
 const curso = "Javascript";
 console.log(nome, escola, curso);
 export {};
+//# sourceMappingURL=aula02.js.map
